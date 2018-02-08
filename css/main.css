@@ -1,32 +1,67 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background-attachment: fixed;
 }
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    text-align: right;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+li{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+}
 a {
     text-decoration: none;
     color: #999;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 a:hover {
     text-decoration: underline;
 }
+input{
+    width: 300px; 
+    padding: 20px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    background: transparent; 
+    color: white; 
+    border-radius: 10px; 
+    border: 1px solid #999; 
+    border-color: white;
+    font-size: 150%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+}
+h2{
+    font-size: 2em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white;
+}
+h3{
+    font-size: 1.5em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color: white;
 }
 p {
-    font-size: 0.5em;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 1em;
     line-height: 1.4em;
     color: #333;
+    word-wrap: break-word;
+    color: white;
 }
 footer {
     border-top: 1px solid #d5d5d5;
