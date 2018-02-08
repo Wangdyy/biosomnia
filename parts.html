@@ -5,26 +5,73 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
-	<body>
+	<body style = "background-image:url(background.jpg)">
 		<nav>
     		<ul>
         		<li><a href="index.html">Home</a></li>
 	        	<li><a href="about.html">About</a></li>
-        		<li><a href="parts.html">Protien Sections</a></li>
-        		<li><a href="/blog">Blog</a></li>
+        		<li><a href="parts.html">Protein Sections</a></li>
+        		<li><a href="sequence.html">Sequences</a></li>
+        		<li><a href="application.html">Application</a></li>
     		</ul>
 		</nav>
 		<div class="container">
     		<div class="blurb">
         		<h1>Sections of the Protein</h1>
-              <h2>TetR repressible promoter</h2>
-			<p> The TetR repressible promoter is made up of two Tet operators, both having a TetR binding site. Promoter is constitutively ON and repressed by TetR (Tet Repressor Protein). Protein TetR repression is inhibited by the addition of tetracycline or its analog. Two Tetracycline (Tc) binding sites, which when Tc binds TetR can no longer repress the promoter and Tc activates transcription/expression of the target gene.</p>
-			<p><b>Sequence: </b><mark>tccctatcagtgatagaga</mark>ttgaca<mark>tccctatcagtgatagaga</mark>tactgagcac</p>
-			<p><mark>highlighted are the Tet operators</mark></p>
-              <h2>Catechol-O-methyltransferase (COMT)</h2>
-			<p><b>Sequence: </b>tccctatcagtgatagaga</p>
-              <h2>Anhydrotetracycline</h2>
-				<p><b>Sequence: </b>tccctatcagtgatagaga</p>
+        			<form>
+						<input type="button" value="Promoters" onclick="window.location.href='#promoter'" />
+						<input type="button" value="Enzymes" onclick="window.location.href='#enzyme'" />
+						<input type="button" value="Terminators" onclick="window.location.href='#terminator'" />
+					</form>
+        			<h2>Full DNA Coding Sequence</h2>
+        				<p><span style="background-color: #8A2BE2">tccctatcagtgatagagattgacatccctatcagtgatagagatactgagcac</span><span style="background-color: #FF00FF">tgtaagtttatacataggcgagtactctgttatggc</span><span style="background-color: #0000FF">atgggttcaacaggtgaaactcaaataacaccaacccacatatcagatgaagaagcaaacctcttcgccatgcaactagcaagtgcttcagttcttcccatgattttgaaatcagctcttgaacttgatctcttagaaatcattgctaaagctggacctggtgctcaaatttcacctattgaaattgcttctcagctaccaacaactaaccctgatgcaccagttatgttggaccgaatgttgcgtctcttggcttgttacataatcctcacatgttcagttcgtactcaacaagatggaaaggttcagagactttatggtttggctactgttgctaagtatttggttaagaatgaagatggtgtatccatttctgctcttaatctcatgaatcaggataaagtgctcatggaaagctggtaccacctaaaagatgcagtccttgatgggggcattccattcaacaaggcttatggaatgacagcctttgaataccatggaacagatccaaggtttaacaaggttttcaacaaggggatgtctgatcactctaccatcacaatgaagaaaattcttgagacctacacaggttttgaaggccttaaatctcttgttgatgtaggtggtggtactggagctgtaattaacacgattgtctcaaaatatcccactataaagggtataaattttgatttaccccatgtcattgaagatgctccatcttatccaggagttgagcatgttggtggagacatgtttgtcagtattccaaaggctgatgctgtttttatgaagtggatttgtcatgactggagtgatgagcactgcttgaaatttttgaagaactgctatgaggcactgccagacaatggaaaagtgattgtggcagaatgcatacttccagtggctccagattcaagcctggccacaaaaggtgtggttcacattgatgtgatcatgttggctcataatcctggtgggaaagagagaacacaaaaagagtttgaggatcttgccaaaggtgctggattccaaggtttcaaagtccattgtaatgctttcaacacatacatcatggagtttcttaagaaggtttaataa</span><span style="background-color: #DC143C">ccaggcatcaaataaaacgaaaggctcagtcgaaagactgggcctttcgttttatctgttgtttgtcggtgaacgctctc</span><span style="background-color: #FFD700">tactagagtcacactggctcaccttcgggtgggcctttctgcgtttata</span></p>
+        				<p><span style="background-color: #8A2BE2"><b>TetR Repressible Promoter</b></span>
+        					<span style="background-color: #FF00FF"><b>Constitutive Promoter</b></span>
+        					<span style="background-color: #0000FF"><b>Caffeic acid O-methyltransferase (COMT)</b></span>
+        					<span style="background-color: #DC143C"><b>BBa_B0010 Forward Terminator</b></span>
+        					<span style="background-color: #FFD700"><b>Bba_B0012 Forward Terminator</b></span></p>
+        			<a name="promoter"></a>
+        			<h2>Promoters</h2>
+              			<h3>TetR Repressible Promoter</h3>
+              			<p><b>Part: </b>Part:BBa_R0040</p>
+              			<p>
+							<li> Inverting regulator that is constitutively ON and repressed by Tet repressor protein (TetR)</li>
+							<li>TetR repression is inhibited by the addition of tetracycline (TC) or its analog, anhydrotetracycline (aTC)</li>
+							<li>Two Tet operator binding sites for TC or aTC</li>
+							<li>TC or aTC eliminates repression of promoter and activates transcription and expression of the target gene, caffeic acid o-methyltransferase (COMT)</li>
+						</p>
+							<p><b>Sequence: </b><mark>tccctatcagtgatagaga</mark>ttgaca<mark>tccctatcagtgatagaga</mark>tactgagcac</p>
+							<p><mark>Tet operators</mark></p>
+							<p><a href="http://parts.igem.org/Part:BBa_R0040">Get the part here.</a></p>
+						<h3>Constitutive Promoter</h3>
+							<p><b>Part: </b>Part:BBa_I14018</p>
+							<p>
+								<li>Antibiotic ampicillin resistant for identification</li>
+								<li>Constitutively ON, allowing transcription of gene</li>
+							</p>
+							<p><b>Sequence: </b>tgtaagtttatacataggcgagtactctgttatggc</p>
+							<p><a href="http://parts.igem.org/Part:BBa_I14018">Get the part here.</a></p>
+					<a name="enzyme"></a>
+              		<h2>Enzymes</h2>
+              			<h3>Caffeic acid O-methyltransferase (COMT)</h3>
+              				<p><b>Part: </b>Part:BBa_I742107</p>
+              				<p>
+              					<li>Key synthesiser in initiating sleep</li>
+								<li>Makes melatonin arrive at the maximum expression level</li>
+								<li>Only occurs during lifted inhibition of TetR by TC or aTC</li>
+								<li>Melatonin can be produced periodically</li>
+							</p>
+							<p><b>Sequence: </b>atgggttcaacaggtgaaactcaaataacaccaacccacatatcagatgaagaagcaaacctcttcgccatgcaactagcaagtgcttcagttcttcccatgattttgaaatcagctcttgaacttgatctcttagaaatcattgctaaagctggacctggtgctcaaatttcacctattgaaattgcttctcagctaccaacaactaaccctgatgcaccagttatgttggaccgaatgttgcgtctcttggcttgttacataatcctcacatgttcagttcgtactcaacaagatggaaaggttcagagactttatggtttggctactgttgctaagtatttggttaagaatgaagatggtgtatccatttctgctcttaatctcatgaatcaggataaagtgctcatggaaagctggtaccacctaaaagatgcagtccttgatgggggcattccattcaacaaggcttatggaatgacagcctttgaataccatggaacagatccaaggtttaacaaggttttcaacaaggggatgtctgatcactctaccatcacaatgaagaaaattcttgagacctacacaggttttgaaggccttaaatctcttgttgatgtaggtggtggtactggagctgtaattaacacgattgtctcaaaatatcccactataaagggtataaattttgatttaccccatgtcattgaagatgctccatcttatccaggagttgagcatgttggtggagacatgtttgtcagtattccaaaggctgatgctgtttttatgaagtggatttgtcatgactggagtgatgagcactgcttgaaatttttgaagaactgctatgaggcactgccagacaatggaaaagtgattgtggcagaatgcatacttccagtggctccagattcaagcctggccacaaaaggtgtggttcacattgatgtgatcatgttggctcataatcctggtgggaaagagagaacacaaaaagagtttgaggatcttgccaaaggtgctggattccaaggtttcaaagtccattgtaatgctttcaacacatacatcatggagtttcttaagaaggtttaataa</p>
+							<p><a href="http://parts.igem.org/Part:BBa_I742107">Get the part here.</a></p>
+					<a name="terminator"></a>
+              		<h2>Terminators</h2>
+              			<h3>Double Terminator (BBa_B0010+BBa_B0012)</h3>
+              				<p><b>Part: </b>Part:BBa_B0015</p>
+              				<p>
+              					<li>Signals the end of transcription in forward direction</li>
+								<li>Most commonly used and reliable terminator</li>
+							<p><b>Sequence: </b>tccctatcagtgatagaga</p>
+							<p><a href="http://parts.igem.org/Part:BBa_B0015">Get the part here.</a></p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>

@@ -5,19 +5,27 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
-	<body>
+	<body style = "background-image:url(background.jpg)">
 		<nav>
     		<ul>
         		<li><a href="index.html">Home</a></li>
 	        	<li><a href="about.html">About</a></li>
         		<li><a href="parts.html">Protein Sections</a></li>
         		<li><a href="sequence.html">Sequences</a></li>
+        		<li><a href="application.html">Application</a></li>
     		</ul>
 		</nav>
 		<div class="container">
     		<div class="blurb">
-        		<h1>The protien to help you sleep at night</h1>
+    			<img src = "insomnia.jpg">
+        		<h1>The Protein to Help You Sleep at Night</h1>
 				<p>Ever had trouble falling asleep but don't want to drug yourself? <em>A new way of technology</em> Don't trust the drugs. <a href="/about">Read more about the process...</a></p>
+				<form>
+					<input type="button" value="Find out more about the protein..." onclick="window.location.href='about.html'" />
+					<input type="button" value="Protein Sequences" onclick="window.location.href='sequence.html'" />
+					<input type="button" value="Gene Parts" onclick="window.location.href='parts.html'" />
+					<input type="button" value="How to use the protein..." onclick="window.location.href='application.html'" />
+				</form>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
 		<footer>
