@@ -40,6 +40,19 @@ input{
     font-size: 150%;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
+#box{
+    width: 400px; 
+    height: 450px;
+    padding: 20px; 
+    cursor: pointer;  
+    background: transparent; 
+    color: white; 
+    border-radius: 10px; 
+    border: 3px solid #999; 
+    border-color: white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    margin-bottom: 50px;
+}
 h1 {
     font-size: 3em;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
@@ -64,10 +77,8 @@ p {
     color: white;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
@@ -75,4 +86,7 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+form{
+    margin-bottom: 10px;
 }
